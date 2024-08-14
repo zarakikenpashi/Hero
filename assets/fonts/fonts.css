@@ -1,0 +1,49 @@
+@font-face {
+    font-family: acuminpro-regular;
+    font-style: normal;
+    font-weight: 400;
+    src: url(acuminpro-regular-webfont.woff2) format("woff2"), 
+         url(acuminpro-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: acuminprowide;
+    font-style: normal;
+    font-weight: 300;
+    src: url(acuminprowide-light-webfont.woff2) format("woff2"), 
+         url(acuminprowide-light-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: acuminprowide;
+    font-style: normal;
+    font-weight: 400;
+    src: url(acuminprowide-regular-webfont.woff2) format("woff2"), 
+         url(acuminprowide-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: acuminprowide;
+    font-style: normal;
+    font-weight: 500;
+    src: url(acuminprowide-medium-webfont.woff2) format("woff2"), 
+         url(acuminprowide-medium-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: acuminprowide;
+    font-style: normal;
+    font-weight: 600;
+    src: url(acuminprowide-semibold-webfont.woff2) format("woff2"), 
+         url(acuminprowide-semibold-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: gtsectrafine;
+    font-style: normal;
+    font-weight: 400;
+    src: url(GT-Sectra-Fine-Regular.woff2) format("woff2"),
+         url(GT-Sectra-Fine-Regular.woff) format("woff");
+}
+@font-face {
+    font-family: gtsectrafine;
+    font-style: normal;
+    font-weight: 500;
+    src: url(GT-Sectra-Fine-Medium.woff2) format("woff2"), 
+         url(GT-Sectra-Fine-Medium.woff) format("woff");
+}
