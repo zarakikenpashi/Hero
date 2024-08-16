@@ -1,0 +1,263 @@
+.intro {
+    margin-block-start:min(96px,8vw);max-width: 1200px;
+    padding: 0 clamp(25px,4vw,65px)
+}
+
+@media screen and (min-width: 700px) {
+    .intro {
+        display:grid;
+        gap: min(48px,4vw);
+        grid-template-areas: "headline text" "image text";
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .intro {
+        margin-left:auto;
+        margin-right: auto
+    }
+}
+
+.intro__headline {
+    font-family: gtsectrafine,"serif";
+    font-size: clamp(2rem,1.7vw + 1.6rem,2.625rem);
+    font-weight: 400;
+    line-height: 1.19;
+    margin-block-start:0}
+
+@media screen and (min-width: 700px) {
+    .intro__headline {
+        grid-area:headline;
+        letter-spacing: -.063rem;
+        margin-block-end:0}
+}
+
+.intro__text {
+    font-size: 1.125rem;
+    letter-spacing: -.014rem;
+    line-height: 1.56
+}
+
+@media screen and (min-width: 700px) {
+    .intro__text {
+        grid-area:text
+    }
+}
+
+.intro__text p {
+    margin-block-start:0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Espace entre les éléments */
+    padding: 10px;
+}
+
+.item {
+    /* padding: 20px; */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* ====================
+##. Counter Area
+==================== */
+.counter-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 100px 0 90px;
+  }
+  
+  .counter-area:before {
+    position: absolute;
+    content: '';
+    background-color: rgba(228, 16, 58,1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .counter-area .counter-box {
+    padding: 25px 0;
+    position: relative;
+  }
+  
+  
+  .counter-area .counter-box img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+  
+  .counter-area .counter-box p {
+    font-size: 46px;
+    color: #fff;
+    margin: 0;
+    line-height: 0;
+  }
+  
+  .counter-area .counter-box h6 {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+.counter::before{
+content: '+';
+}
+
+.millions::after{
+    content: '';
+    background-image: url('../images/mariage.svg');
+    color: #fff;
+    filter: brightness(0) invert(1);
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+@media (min-width: 64rem) {
+    .btn {
+        min-width: 12rem;
+        margin-block: 2.5rem;
+    }
+}
+.btn {
+    background-color: rgba(228, 16, 58,1);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+    letter-spacing: .031875rem;
+    padding: .9375rem 1.25rem;
+    text-align: center;
+    width: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition-property: background-color, color, border;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
+.btn:hover,.btn:focus,.btn:active {
+    background-color: rgba(228, 16, 58,.9);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+section.counter-area{
+    margin-block: 2.5rem;
+}
+
