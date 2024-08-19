@@ -1,0 +1,195 @@
+.body-matrix .video {
+    display: block;
+    margin: 4rem auto;
+    max-width: 1250px;
+    padding-bottom: 42.72%;
+    position: relative;
+    width: 100%
+}
+
+@media screen and (min-width: 1250px) {
+    .body-matrix .video {
+        height:535px;
+        padding-bottom: 0
+    }
+}
+
+.body-matrix .video:hover:after {
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px)
+}
+
+.body-matrix .video:hover span {
+    text-decoration-color: #fff;
+    text-decoration-thickness: 2px
+}
+
+.body-matrix .video:after {
+    --size: clamp(40px,8vw,92px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: red;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='15' height='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14.5 8.5-14 8V.5z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: clamp(10px,2.5vw,16px);
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 0 2px 54px 0 rgba(0,0,0,.24);
+    content: "";
+    display: block;
+    height: var(--size);
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1);
+    transition: -webkit-backdrop-filter .15s ease;
+    transition: backdrop-filter .15s ease;
+    transition: backdrop-filter .15s ease,-webkit-backdrop-filter .15s ease;
+    width: var(--size);
+}
+
+@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter:blur(10px))) {
+    .body-matrix .video:after {
+        background-color:rgba(0,0,0,.5)
+    }
+}
+
+.body-matrix .video img,.body-matrix .video source {
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0
+}
+
+.body-matrix .video span {
+    bottom: 10%;
+    color: #fff;
+    font-family: acuminprowide,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: clamp(1rem,.2vw + 1rem,2rem);
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: hsla(0,0%,100%,0);
+    text-decoration-thickness: 1px;
+    transition: -webkit-text-decoration .25s ease;
+    transition: text-decoration .25s ease;
+    transition: text-decoration .25s ease,-webkit-text-decoration .25s ease;
+    width: 100%;
+    z-index: 1
+}
+
+@media screen and (min-width: 640px) {
+    .body-matrix .video span {
+        letter-spacing:-.063rem
+    }
+}
+
+.body-matrix .video+.video__embed {
+    height: 0;
+    margin: 4rem auto;
+    max-width: 1250px;
+    padding-bottom: 42.72%;
+    position: relative;
+    width: 100%
+}
+
+@media screen and (min-width: 1250px) {
+    .body-matrix .video+.video__embed {
+        height:535px;
+        padding-bottom: 0
+    }
+}
+
+.body-matrix .video+.video__embed iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+/*.body-matrix .video span {
+    bottom: 25%;
+    color: #fff;
+    font-family: acuminprowide,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    font-size: clamp(1rem,.2vw + 1rem,2rem);
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1
+}
+
+@media screen and (min-width: 640px) {
+    .body-matrix .video span {
+        letter-spacing:-.063rem
+    }
+}
+
+.body-matrix .video+.video__embed {
+    height: 0;
+    margin: 4rem auto;
+    max-width: 1250px;
+    padding-bottom: 42.72%;
+    position: relative;
+    width: 100%
+}
+
+@media screen and (min-width: 1250px) {
+    .body-matrix .video+.video__embed {
+        height:535px;
+        padding-bottom: 0
+    }
+}
+
+.body-matrix .video+.video__embed iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+
+
+.body-matrix .video:after {
+    --size: clamp(40px,8vw,92px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='15' height='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14.5 8.5-14 8V.5z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: clamp(10px,2.5vw,16px);
+    border-radius: 50%;
+    bottom: 0;
+    box-shadow: 0 2px 54px 0 rgba(0,0,0,.24);
+    content: "";
+    display: block;
+    height: var(--size);
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(1);
+    transition: -webkit-backdrop-filter .15s ease;
+    transition: backdrop-filter .15s ease;
+    transition: backdrop-filter .15s ease,-webkit-backdrop-filter .15s ease;
+    width: var(--size);
+}
+
+@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter:blur(10px))) {
+    .body-matrix .video:after {
+        background-color:rgba(0,0,0,.5)
+    }
+}*/
