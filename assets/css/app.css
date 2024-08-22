@@ -6,6 +6,43 @@
 :root {
     --swiper-theme-color: #007aff;
 }
+.big-statement {
+    font-family: acuminprowide, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    line-height: 1;
+    margin-block-end: 0;
+    margin-block-start: 4rem;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
+    max-width: 1200px;
+    padding: 0 25px;
+}
+@media screen and (min-width: 1200px) {
+    .big-statement {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.big-statement--4 {
+    font-size: clamp(1.5rem, 8vw - 1rem, 4rem);
+}
+.big-statement--5 {
+    font-size: clamp(2rem, 9.6vw - 1rem, 5rem);
+}
+.big-statement--6 {
+    font-size: clamp(2rem, 12.8vw - 2rem, 6rem);
+}
+.big-statement--7 {
+    font-size: clamp(2rem, 16vw - 3rem, 7rem);
+}
+.big-statement--8 {
+    font-size: clamp(3rem, 16vw - 2rem, 8rem);
+}
+.big-statement--9 {
+    font-size: clamp(3rem, 19.2vw - 3rem, 9rem);
+}
+.big-statement--10 {
+    font-size: clamp(3rem, 22.4vw - 4rem, 10rem);
+}
 
 .sr-only {
     clip: rect(1px, 1px, 1px, 1px) !important;
@@ -129,7 +166,7 @@ form .fui-submit:hover:after {
 .cta:after,
 form .fui-btn:after,
 form .fui-submit:after {
-    content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 10'%3E%3Cpath d='M13.1 9.1c-.2 0-.2-.1-.2-.2.2-.5.4-1 .7-1.4.3-.4.5-.8.8-1.2.3-.4.6-.7.8-1H.3c-.1 0-.2 0-.3-.1V5c0-.1 0-.3.1-.4l.3-.3c.1-.1.2-.1.4-.1h14.4c-.3-.3-.5-.6-.8-.9-.3-.3-.5-.7-.8-1.1-.3-.4-.5-.7-.6-1.1-.1-.2-.1-.4-.1-.4 0-.2.1-.2.2-.2s.2 0 .4.1c.1 0 .2.1.3.2.3.4.7.7 1 1 .4.3.7.7 1.1 1l1.2.9c.4.3.8.6 1.3.8.2.1.3.2.3.3v.1s-.1.1-.3.2c-.5.2-.9.5-1.3.8l-1.2.9c-.4.3-.7.7-1.1 1-.4.3-.7.7-1 1-.1.1-.2.1-.3.2-.2.1-.3.1-.4.1Z' fill='%234E473F'/%3E%3C/svg%3E");
+    /* content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 19 10'%3E%3Cpath d='M13.1 9.1c-.2 0-.2-.1-.2-.2.2-.5.4-1 .7-1.4.3-.4.5-.8.8-1.2.3-.4.6-.7.8-1H.3c-.1 0-.2 0-.3-.1V5c0-.1 0-.3.1-.4l.3-.3c.1-.1.2-.1.4-.1h14.4c-.3-.3-.5-.6-.8-.9-.3-.3-.5-.7-.8-1.1-.3-.4-.5-.7-.6-1.1-.1-.2-.1-.4-.1-.4 0-.2.1-.2.2-.2s.2 0 .4.1c.1 0 .2.1.3.2.3.4.7.7 1 1 .4.3.7.7 1.1 1l1.2.9c.4.3.8.6 1.3.8.2.1.3.2.3.3v.1s-.1.1-.3.2c-.5.2-.9.5-1.3.8l-1.2.9c-.4.3-.7.7-1.1 1-.4.3-.7.7-1 1-.1.1-.2.1-.3.2-.2.1-.3.1-.4.1Z' fill='%234E473F'/%3E%3C/svg%3E"); */
     display: block;
     height: 0.538rem;
     left: 0;
@@ -138,7 +175,7 @@ form .fui-submit:after {
     transition: left 0.25s ease;
     width: 1.169rem;
 }
-.more-button {
+.more-button,.news-more-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -153,13 +190,15 @@ form .fui-submit:after {
     text-decoration: none;
     text-transform: uppercase;
 }
-.more-button .icon {
+.more-button .icon, .news-more-button .icon {
     height: 0.55rem;
     margin-left: 1.5ch;
     width: 0.625rem;
 }
 .more-button:after,
-.more-button:before {
+.more-button:before, 
+.news-more-button:after, 
+.news-more-button:before {
     border-radius: 100%;
     content: "";
     display: block;
@@ -169,24 +208,35 @@ form .fui-submit:after {
     top: 0.2rem;
     width: 2rem;
 }
-.more-button:after {
+.news-more-button:after, 
+.news-more-button:before {
+    right: -0.7rem;
+    top: -7px;
+}
+.more-button:after, .news-more-button:after {
     border: 0 solid transparent;
 }
-.more-button:before {
+.more-button:before, .news-more-button:before {
     border: 1px solid transparent;
 }
-.more-button:hover:after {
+.more-button:hover:after,.news-more-button:after {
     border-left-width: 1px;
     border-right-width: 1px;
     border-top: 1px solid #fff;
     transform: rotate(270deg);
     transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
-.more-button:hover:before {
-    /* border-color: #9d9994 #9d9994 #9d9994 transparent; */
+.news-more-button:hover:after{
+    border-top: 1px solid rgba(228, 16, 58,1);
+}
+.more-button:hover:before,.news-more-button:hover:before{
     border-color: #fff #fff #fff transparent;
     transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
 }
+.news-more-button:hover:before{
+    border-color: rgba(228, 16, 58,1);
+}
+
 .cta {
     border: 1px solid rgba(78, 71, 63, 0.25);
     padding: 25px 30px;

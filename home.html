@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <title>Solibra | Société de Limonaderies et de Boissons Rafraîchissantes d'Afrique</title>
+    <style>
+        .hero-image {
+            height: 484px;
+            position: relative;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 728px) {
+            .hero-image {
+                height:0;
+                padding-bottom: 66.4835164835%;
+                margin-top: -80px;
+            }
+        }
+
+        @media screen and (min-width: 1242px) {
+            .hero-image {
+                height:100vh;
+                padding-bottom: 0;
+            }
+        }
+
+        .hero-image__picture {
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover
+        }
+
+        .hero-image__picture,.hero-image__picture:after {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .hero-image__picture:after {
+            background: linear-gradient(0deg, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .2) 100%), linear-gradient(222deg, rgba(0, 0, 0, 0) 54.39%, rgba(0, 0, 0, .8) 77.27%);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            position: absolute;
+            display: block;
+        }
+
+        .hero-image__picture img,.hero-image__picture source {
+            display: block;
+            height: 100%;
+            left: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            transition: opacity .25s ease;
+            width: 100%
+        }
+
+        .hero-image__picture.is-loaded img,.hero-image__picture.is-loaded source,.no-js .hero-image__picture img,.no-js .hero-image__picture source {
+            opacity: 1
+        }
+
+        .hero__headline {
+            text-wrap: balance;
+            bottom:0;
+            color: #fff;
+            font-size:clamp(2.5rem, 1.7rem + 0.02264* 100vw, 6rem);
+            font-weight: 400;
+            left: 25px;
+            letter-spacing: clamp(-.18rem,-4.5vw + 1rem,-1.88rem);
+            line-height: 1.1;
+            max-width: 789px;
+            position: absolute;
+            width: calc(100% - 50px);
+            z-index: 2;
+        }
+        .intro {
+            margin-block-start:min(96px,4vw);
+            max-width: 1200px;
+            padding: 0 clamp(25px,4vw,65px);
+        }
+
+        @media screen and (min-width: 700px) {
+            .intro:not(.akwaba .intro) {
+                display:grid;
+                gap: min(48px,4vw);
+                grid-template-areas: "headline text" "image text";
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+        
+        @media screen and (min-width: 1200px) {
+            .intro {
+                margin-left:auto;
+                margin-right: auto
+            }
+        }
+
+        .intro__headline {
+            font-family: gtsectrafine,"serif";
+            font-size: clamp(2rem,1.7vw + 1.6rem,2.625rem);
+            font-weight: 400;
+            line-height: 1.19;
+            margin-block-start:0;
+        }
+
+        @media screen and (min-width: 700px) {
+            .intro__headline {
+                grid-area:headline;
+                letter-spacing: -.063rem;
+                margin-block-end:0;
+            }
+        }
+        
+
+        .intro__text {
+            font-size: 1.125rem;
+            letter-spacing: -.014rem;
+            line-height: 1.56
+        }
+
+        @media screen and (min-width: 700px) {
+            /* .intro__text {
+                grid-area:text
+            } */
+             
+            .intro__text:not(.intro__text.intro__text__reverse) {
+                grid-area:text
+            }
+        }
+
+        .intro__text p {
+            margin-block-start:0
+        }
+
+
+        .cta {
+            display: inline-block;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            max-width: 100%;
+            outline: 0;
+            border: none;
+            background: #000;
+            color: #fff;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+            text-align: center;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        .h-100 {
+            height: 100% !important;
+        }
+        .mw-100 {
+            max-width: 100% !important;
+        }
+        .w-100 {
+            width: 100% !important;
+        }
+
+        .theme-amber{
+            background: linear-gradient(210deg, rgba(255, 255, 255, 0) 33.97%, rgba(254, 229, 183, 0.24) 72.07%, rgba(254, 217, 160, 0.3) 89.41%);
+        }
+        .theme-slate{
+            background: linear-gradient(221deg, rgba(255, 255, 255, 0) 32.55%, rgba(238, 223, 242, 0.4) 77.4%, rgba(230, 209, 235, 0.5) 93.4%);
+        }
+
+        .background-video{
+            padding-top: clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+            padding-bottom: clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+        }
+        .bg-blur {
+            background: rgba(255, 255, 255, .75);
+            -webkit-backdrop-filter: blur(17px);
+            backdrop-filter: blur(17px);
+        }
+
+
+
+
+
+
+
+
+
+    @media (min-width: 1200px) {
+        .full-width-banner__background-image {
+            min-height: 70rem;
+        }
+    }
+
+    .full-width-banner__background-image::after {
+        background: linear-gradient(0deg, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .2) 100%), linear-gradient(222deg, rgba(0, 0, 0, 0) 54.39%, rgba(0, 0, 0, .8) 77.27%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        display: block;
+    }
+
+    .full-width-banner__background-image {
+        min-height: 55.4rem;
+    }
+
+    .position-relative {
+        position: relative !important;
+    }
+    .full-width-banner--with-bg-image .full-width-banner__inner-content {
+        --lg-2:clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+        bottom: calc(var(--lg-2));
+        position: absolute;
+        top: 0;
+        bottom: clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+        left: 0;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .full-width-banner__inner-content {
+        --lg-2:clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+        position: absolute;
+        top: 0;
+        bottom: clamp(4rem, 2.279rem + 0.04528* 100vw, 8.8rem);
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }  
+
+    .our-history-bg{
+        background: url('./assets/images/our-history-banner.webp') no-repeat center center;
+        background-size: cover;
+        height: 40rem;
+    } 
+
+
+    </style>
+
+</head>
+
+<body class="with-hero-image">
+    <!-- **************************************************************************************
+        ************************** NAVBAR LAYOUT ***********************************************
+        **************************************************************************************** 
+    -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <h1 class="header__logo-text sr-only">Solibra</h1>
+            <div class="header__logo-svg"></div>
+        </a>
+
+        <nav class="header__navigation" role="navigation">
+            <button id="menuToggle" class="header__mobile-menu-button mobile-menu-toggle" aria-expanded="false" aria-controls="menu">
+                <span class="mobile-menu-toggle__label" data-label-open="Menu" data-label-close="Close">Menu</span>
+                <span class="mobile-menu-toggle__icon">
+                    <span class="mobile-menu-toggle__icon-inner"></span>
+                </span>
+            </button>
+
+            <div id="menu" class="header__navigation-lists">
+                <ul id="mainMenu" class="header__navigation-list header__navigation-list--6">
+                    <li class="header__navigation-item">
+                        <a  href="who-we-are.html">L'entreprise</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a  href="brands.html">Marques</a>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="breweries.html">La brasserie</a>
+                    </li>
+
+                    <li class="header__navigation-item header__navigation-item--has-children">
+                        <a  href="sustainability.html">Engagements RSE</a>
+                        <div class="header__subnavigation">
+                            <ul class="header__subnavigation__list">
+                                <li class="header__subnavigation__item">                                         
+                                    <a  href="sustainability/zerowaste.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/24814/sustainability_duvelmoortgat_zerowaste_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Zero déchet</span>
+                                    </a>
+                                </li>
+                                <li class="header__subnavigation__item">                    
+                                    <a  href="sustainability/responsible-enjoyment.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/24896/sustainability_duvelmoortgat_enjoyresponsibily_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Plaisir Responsable</span>
+                                    </a>
+                                </li>
+
+                                <li class="header__subnavigation__item">                                      
+                                    <a  href="sustainability/community-engagement.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/25102/sustainability_duvelmoortgat_communityengagement_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Communautaire</span>
+                                    </a>
+                                </li>
+                                <li class="header__subnavigation__item">                                            
+                                    <a  href="sustainability/healthy-workenvironment.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/25922/sustainability_duvelmoortgat_healthyworkenvironment_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>environnement de travail</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="news.html">Actualités</a>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="careers.html">Carrière</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- **************************************************************************************
+         ************************** HERO SECTION LAYOUT ********************************************
+         **************************************************************************************** 
+        -->
+        <div class="hero-image">
+
+            <picture class="hero-image__picture is-loaded">
+                <img src="assets/images/our-business-banner-new.webp" height="2160" width="1440" loading="eager" alt="">
+            </picture>
+        
+            <h2 class="hero__headline">
+                We’re a global leader in <em>premium drinks</em>, the most exciting consumer products space.</h2>
+            
+        </div>
+
+
+
+        <section class="akwaba">
+            <div class="intro">
+                <div class="intro__text">
+                    <p>
+                        With over 200 brands and sales in nearly 180 countries, our portfolio has remarkable breadth and depth. From centuries-old names to the latest innovations, we're committed to building and sustaining exceptional brands.
+                    </p>
+                    <p>
+                        <a class="cta cta--primary animate animate--expand-cta" href="#">
+                            <span class="cta__inner">
+                              <span class="cta__label">Learn more about our business</span>
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="histoire">
+            <div class="background-video theme-amber">
+                <div class="intro">
+                    <picture class="intro__image">
+                        <img class="mw-100 w-100 h-100" src="assets/images/striving-to-be-better.webp"  loading="lazy">
+                    </picture>
+                    <div class="intro__text">
+                        <h2><em>Striving</em> to be better</h2>
+                        <p>
+                            Our ambition is to be one of the best performing, most trusted and respected consumer products companies in the world.
+                        </p>
+                        <p>
+                            <a class="cta cta--primary animate animate--expand-cta" href="#">
+                                <span class="cta__inner">
+                                  <span class="cta__label">Learn more about our business</span>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="organisation" style="position: relative;">
+            <div class="background-video">
+                <div class="intro bg-blur">
+                    <div class="intro__text intro__text__reverse">
+                        <h2><em>Making</em> a global impact</h2>
+                        <p>
+                            We employ over 30,000 people globally and sell our brands in nearly 180 countries. With a truly global footprint, we build brands that resonate with our consumers.
+                        </p>
+                        <p>
+                            And we push ourselves to be worthy of people's trust everywhere we live, work, source and sell.
+                        </p>
+                        <p>
+                            <a class="cta cta--primary animate animate--expand-cta" href="#">
+                                <span class="cta__inner">
+                                  <span class="cta__label">where we operate</span>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                    <picture class="intro__image">
+                        <img class="mw-100 w-100 h-100" src="assets/images/making-a-global-impact.webp"  loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div style="position: absolute; left: 0; right: 0; top: 0; z-index: -1;">
+                <video class="object-fit-cover w-100 video__internal h-100" autoplay="" muted="" loop="" playsinline="">
+                    <source src="assets/images/liquid-magic-video-bg.webm" type="video/webm">	  
+                  </video>
+            </div>
+        </section>
+
+
+
+
+        <section class="brands">
+            <div class="background-video theme-slate">
+                <div class="intro intro__reverse">
+                    <picture class="intro__image">
+                        <img class="mw-100 w-100 h-100" src="assets/images/building-brands.webp"  loading="lazy">
+                    </picture>
+                    <div class="intro__text">
+                        <h2><em>Building</em> brands</h2>
+                        <p>
+                            From much-loved, established brands, such as Johnnie Walker, to the latest innovations, like Tanqueray 0.0, we create products, tastes and experiences for people around the world to enjoy.
+                        </p>
+                        <p>
+                            This requires focus and investment in what we call a brilliant blend of 'creativity with precision'.
+                        </p>
+                        <p>
+                            <a class="cta cta--primary animate animate--expand-cta" href="#">
+                                <span class="cta__inner">
+                                  <span class="cta__label">Find out how we build world class brands</span>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="our-history">
+            <div class="position-relative">
+                <div class="our-history-bg">
+                    <div class="full-width-banner__inner-content">
+                        <h2>Façonné par une riche histoire</h2>
+                        <p>Fondée en 1997, Diageo est une entreprise relativement jeune. Cependant, bon nombre de nos marques sont imprégnées d'un riche héritage, certaines remontant même au XVIIe siècle.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+        <footer>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem iusto facere obcaecati enim pariatur consequuntur consequatur nam, numquam architecto culpa quasi in! Excepturi aperiam, animi tempore tempora vitae totam.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur corporis, voluptatibus aperiam recusandae repellat odit inventore, nostrum ea, beatae necessitatibus magnam atque error aspernatur. Rem accusantium nisi officiis reprehenderit. Quis.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro beatae veniam alias, optio maxime nihil qui dolorem nisi magnam possimus ut explicabo cum assumenda pariatur adipisci sequi vel aliquam. Qui.
+        </footer>
+
+
+    </main>
+
+
+    
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
+
+        
