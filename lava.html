@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+    <title>Solibra | Société de Limonaderies et de Boissons Rafraîchissantes d'Afrique</title>
+    <link rel="stylesheet" href="labo/fullpage.min.css">
+    <style>
+        body{
+            background-color: #000;
+        }
+        section {
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* opacity: 0; */
+            
+        }
+
+        #section1 { background-image: url('labo/bg-1.jpeg'); }
+        #section2 { background-image: url('labo/bg-2.jpeg'); }
+        #section3 { background-image: url('labo/bg-3.jpeg'); }
+        #section4 { background-image: url('labo/bg-4.jpeg'); }
+        #section5 { background-image: url('labo/bg-5.jpeg'); }
+
+        .active-section {
+            animation: fade-in 1.5s ease-in-out forwards;
+        }
+                /* Animation */
+                @keyframes fade-in {
+            0% {
+                /* opacity: 0; */
+                transform: scale(1);
+            }
+            100% {
+                /* opacity: 1; */
+                transform: scale(1.1);
+            }
+        }
+        @media (min-width: 768px) {
+ .history-section__title {
+        font-size: 5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+ .history-section__title {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 1280px) {
+    h3 {
+        font-size: 4.2rem;
+        line-height: 4.4rem;
+    }
+}
+h3 {
+    font-size: 3.6rem;
+    line-height: 3.8rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Knockout 49 A", "Knockout 49 B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #263A32;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.history-section__text p {
+    color: white;
+}
+@media (min-width: 1024px) {
+    .common-text {
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+}
+@media (min-width: 544px) {
+    .common-text {
+        font-size: 1rem;
+    }
+}
+.common-text {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2.4rem;
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+p {
+    color: #fff;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", Georgia, "Times New Roman", serif;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+    </style>
+</head>
+<body class="with-hero-image">
+    <!-- **************************************************************************************
+        ************************** NAVBAR LAYOUT ***********************************************
+        **************************************************************************************** 
+    -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <h1 class="header__logo-text sr-only">Solibra</h1>
+            <div class="header__logo-svg"></div>
+        </a>
+
+        <nav class="header__navigation" role="navigation">
+            <button id="menuToggle" class="header__mobile-menu-button mobile-menu-toggle" aria-expanded="false" aria-controls="menu">
+                <span class="mobile-menu-toggle__label" data-label-open="Menu" data-label-close="Close">Menu</span>
+                <span class="mobile-menu-toggle__icon">
+                    <span class="mobile-menu-toggle__icon-inner"></span>
+                </span>
+            </button>
+
+            <div id="menu" class="header__navigation-lists">
+                <ul id="mainMenu" class="header__navigation-list header__navigation-list--6">
+                    <li class="header__navigation-item">
+                        <a  href="who-we-are.html">L'entreprise</a>
+                    </li>
+                    <li class="header__navigation-item">
+                        <a  href="brands.html">Marques</a>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="breweries.html">La brasserie</a>
+                    </li>
+
+                    <li class="header__navigation-item header__navigation-item--has-children">
+                        <a  href="sustainability.html">Engagements RSE</a>
+                        <div class="header__subnavigation">
+                            <ul class="header__subnavigation__list">
+                                <li class="header__subnavigation__item">                                         
+                                    <a  href="sustainability/zerowaste.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/24814/sustainability_duvelmoortgat_zerowaste_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Zero déchet</span>
+                                    </a>
+                                </li>
+                                <li class="header__subnavigation__item">                    
+                                    <a  href="sustainability/responsible-enjoyment.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/24896/sustainability_duvelmoortgat_enjoyresponsibily_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Plaisir Responsable</span>
+                                    </a>
+                                </li>
+
+                                <li class="header__subnavigation__item">                                      
+                                    <a  href="sustainability/community-engagement.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/25102/sustainability_duvelmoortgat_communityengagement_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>Communautaire</span>
+                                    </a>
+                                </li>
+                                <li class="header__subnavigation__item">                                            
+                                    <a  href="sustainability/healthy-workenvironment.html">
+                                        <img src="https://www.duvelmoortgat.com/uploads/images/Sustainability/Headers/_navigationWebp/25922/sustainability_duvelmoortgat_healthyworkenvironment_header.webp" alt="" class="header__subnavigation__image">
+                                        <span>environnement de travail</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="news.html">Actualités</a>
+                    </li>
+
+                    <li class="header__navigation-item">
+                        <a  href="careers.html">Carrière</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="fullpage" style="color: #fff;">
+            <div id="section1" class="history-section section fp-section active fp-completely" style="height: 249px;">
+                <div class="container" style="width: 50%; margin: auto; position: relative;">
+                    <div class="position-absolute" style="margin-top: 150px;">
+                        <div class="history-section__time u-label u-label--gold">1893 - 1898</div>
+                        <h3 class="history-section__title">Comment tout a commencé</h3>
+                        <p class="common-text">Bien avant qu’il ne soit question d’une brasserie, se trouvait sur le site actuel une petite laiterie, appelée la «&nbsp;Laiterie de Haecht&nbsp;».</p>
+                    </div>
+                </div>
+                <div class="history-section__button u-justify--center">
+                    <button class="c-button c-button--icon u-radius--pill button-panel-trigger null null">
+                        <div class="c-button--icon__inner">
+                            <div class="c-button--icon__icon"></div>
+                            <div class="c-button--icon__label">Poursuivre la lecture</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="history-section__bg u-cover u-cover--center" style="background-image: url(labo/bg-3.jpeg);"></div>
+            </div>
+            <!-- <div class="section" id="section2">
+                <div class="container" style="width: 60%; margin: auto; position: relative;">
+                    <div class="position-absolute" style="margin-top: 150px;">
+                        <h1 class="history-section__title">Un départ sur les chapeaux de roue</h1>
+                        <div class="col-container" style="display: flex; justify-content: space-around; gap: 3rem;">
+                            <p class="common-text">
+                                Le 14 juin 1898, Eugène De Ro brasse sa première bière à haute fermentation. Quatre ans plus tard, il s’essaie au brassage à basse fermentation.
+                            </p>
+                            <p class="common-text">
+                                Sa tentative fut couronnée d’un tel succès qu’en 1913, la « Brasserie et Laiterie de Haecht » intègre le gratin de l’univers brassicole belge.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="container" style="width: 50%; margin: auto; position: relative;">
+                    <div class="position-absolute" style="margin-top: 150px;">
+                        <h1 class="history-section__title">comment tout a commencé</h1>
+                    <p class="common-text">Bien avant qu’il ne soit question d’une brasserie, se trouvait sur le site actuel une petite laiterie, appelée la « Laiterie de Haecht ».</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section4">
+                <div class="container" style="width: 50%; margin: auto; position: relative;">
+                    <div class="position-absolute" style="margin-top: 150px;">
+                        <h1 class="history-section__title">comment tout a commencé</h1>
+                    <p class="common-text">Bien avant qu’il ne soit question d’une brasserie, se trouvait sur le site actuel une petite laiterie, appelée la « Laiterie de Haecht ».</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section5">
+                <div class="container" style="width: 50%; margin: auto; position: relative;">
+                    <div class="position-absolute" style="margin-top: 150px;">
+                        <h1 class="history-section__title">comment tout a commencé</h1>
+                    <p class="common-text">Bien avant qu’il ne soit question d’une brasserie, se trouvait sur le site actuel une petite laiterie, appelée la « Laiterie de Haecht ».</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="labo/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            scrollHorizontally: true,
+            navigation: true,
+            navigationPosition: 'right',
+            showActiveTooltip: true,
+            scrollingSpeed: 700,
+
+            afterLoad: function(origin, destination, direction){
+            let loadedSection = destination.item;
+            loadedSection.classList.add('active-section');
+        },
+        onLeave: function(origin, destination, direction){
+            let leavingSection = origin.item;
+            leavingSection.classList.remove('active-section');
+        }
+        });
+    </script>
+
+</body>
+</html>
